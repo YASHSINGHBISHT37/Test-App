@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: reg;
+  src: url('/fonts/GothamMedium.ttf');
+}
+
+@font-face {
+  font-family: light;
+  src: url('/fonts/GothamLight.ttf');
+}
+
+body {
+  font-family: reg;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
