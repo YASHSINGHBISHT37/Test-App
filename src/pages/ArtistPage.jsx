@@ -139,6 +139,29 @@ const ArtistPage = () => {
 
                 </div>
 
+                {/* Featuring */}
+                <div className='flex flex-col px-2 mt-8'>
+
+                    <div className='flex justify-between items-center px-2'>
+                        <h1 className='text-[2vh] tracking-tighter mt-4 font-bold'>Featuring Drake</h1>
+                    </div>
+
+                    <div className='flex overflow-x-scroll scrollbar-hide '>
+                        {popular.map((song, i) => (
+
+                            <div key={i} className='w-42 min-h-40 flex-shrink-0 flex flex-col gap-2 cursor-pointer hover:bg-white/7 active:bg-white/7 p-2 rounded-[0.4vh]'>
+                                <img src={`/images/${song.img}.jpg`} className='w-38 h-38 rounded-[0.4vh]' />
+                                <div className='leading-4'>
+                                    <h1 className='mb-1 text-[1.6vh] tracking-tighter'>{song.name}</h1>
+                                    <h1 className='text-[1.3vh] tracking-tighter text-white/50  pt-[0.2vh] leading-3'>202z,jd SAJ  Djsaj hbSAB s h bhs ba bdjbsmaj5</h1>
+                                </div>
+                            </div>
+                        ))}
+
+                    </div>
+
+                </div>
+
 
                 {/* About */}
                 <div className='flex flex-col px-4 mt-8'>
@@ -164,29 +187,6 @@ const ArtistPage = () => {
 
                     </div>
 
-
-                </div>
-
-                {/* Featuring */}
-                <div className='flex flex-col px-2 mt-8'>
-
-                    <div className='flex justify-between items-center px-2'>
-                        <h1 className='text-[2vh] tracking-tighter mt-4 font-bold'>Featuring Drake</h1>
-                    </div>
-
-                    <div className='flex overflow-x-scroll scrollbar-hide '>
-                        {popular.map((song, i) => (
-
-                            <div key={i} className='w-42 min-h-40 flex-shrink-0 flex flex-col gap-2 cursor-pointer hover:bg-white/7 active:bg-white/7 p-2 rounded-[0.4vh]'>
-                                <img src={`/images/${song.img}.jpg`} className='w-38 h-38 rounded-[0.4vh]' />
-                                <div className='leading-4'>
-                                    <h1 className='mb-1 text-[1.6vh] tracking-tighter'>{song.name}</h1>
-                                    <h1 className='text-[1.3vh] tracking-tighter text-white/50  pt-[0.2vh] leading-3'>202z,jd SAJ  Djsaj hbSAB s h bhs ba bdjbsmaj5</h1>
-                                </div>
-                            </div>
-                        ))}
-
-                    </div>
 
                 </div>
 
